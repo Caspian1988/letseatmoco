@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsEatMoCo | Montgomery County Restaurant Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Branding -->
+    <header class="hero">
+        <h1>LetsEatMoCo</h1>
+        <p class="subtitle">Discover the Best Local Dining Across Montgomery County, MD</p>
+        
+        <!-- Search & Filter Area -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by restaurant name, cuisine, or tag (e.g., Halal, Rockville)...">
+        </div>
+
+        <div class="filter-pills">
+            <button class="pill active" onclick="filterData('All')">All Spots</button>
+            <button class="pill" onclick="filterData('Rockville')">Rockville</button>
+            <button class="pill" onclick="filterData('Bethesda')">Bethesda</button>
+            <button class="pill" onclick="filterData('Silver Spring')">Silver Spring</button>
+            <button class="pill" onclick="filterData('Gaithersburg')">Gaithersburg</button>
+            <button class="pill" onclick="filterData('Halal Options')">Halal</button>
+        </div>
+    </header>
+
+    <!-- Results Grid -->
+    <main class="grid-container" id="restaurantGrid">
+        <!-- Cards will load here dynamically using JavaScript -->
+    </main>
+
+    <footer>
+        <p>Built with pride by a Montgomery County Ride On Operator & Developer | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
