@@ -13,9 +13,16 @@
         <h1>LetsEatMoCo</h1>
         <p class="subtitle">Discover the Best Local Dining Across Montgomery County, MD</p>
         
-        <!-- Search & Filter Area -->
+        <!-- AI Recommendation Bar -->
+        <div class="ai-box">
+            <input type="text" id="aiInput" placeholder="Ask AI: 'Light halal lunch in Rockville under $15' or 'Best Chinese near Silver Spring'...">
+            <button id="aiBtn" onclick="askAiMatcher()">Ask AI Matcher</button>
+        </div>
+        <div id="aiResponse" class="ai-response-card hidden"></div>
+
+        <!-- Standard Keyword Search -->
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search by restaurant name, cuisine, or tag (e.g., Halal, Rockville)...">
+            <input type="text" id="searchInput" placeholder="Search by name, cuisine, or tag (e.g., Halal, Rockville)...">
         </div>
 
         <div class="filter-pills">
@@ -30,7 +37,7 @@
 
     <!-- Results Grid -->
     <main class="grid-container" id="restaurantGrid">
-        <!-- Cards will load here dynamically using JavaScript -->
+        <!-- Cards load dynamically -->
     </main>
 
     <footer>
