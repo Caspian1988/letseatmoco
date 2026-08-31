@@ -1,165 +1,49 @@
-/* Reset & Base Styles */
+/* ==========================================================================
+   Global Reset & Base Theme
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #0f172a;
-    color: #f8fafc;
+    background-color: #0f172a; /* Slate Dark Background */
+    color: #f8fafc;            /* Crisp Light Text */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    padding: 2rem 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header Section */
+/* ==========================================================================
+   Header / Hero Section
+   ========================================================================== */
 .hero {
     text-align: center;
-    padding: 2rem 1rem;
-    border-bottom: 1px solid #1e293b;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    border-bottom: 1px solid #334155;
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    color: #38bdf8;
+    font-weight: 800;
+    color: #38bdf8; /* Accent Cyan */
     margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
 }
 
 .subtitle {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
 }
 
-/* Search Bar */
-.search-container {
-    max-width: 600px;
-    margin: 0 auto 1.5rem auto;
-}
-
-#searchInput {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    border: 1px solid #334155;
-    background-color: #1e293b;
-    color: #f8fafc;
-    font-size: 1rem;
-    outline: none;
-}
-
-#searchInput:focus {
-    border-color: #38bdf8;
-}
-
-/* Filter Pills */
-.filter-pills {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.pill {
-    background-color: transparent;
-    color: #38bdf8;
-    border: 1px solid #38bdf8;
-    padding: 0.4rem 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background 0.2s;
-}
-
-.pill:hover, .pill.active {
-    background-color: #22c55e;
-    color: #0f172a;
-    border-color: #22c55e;
-}
-
-/* Restaurant Cards Grid */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    padding: 2.5rem 0;
-    border-bottom: 1px solid #1e293b;
-}
-
-/* Portfolio-Style Card */
-.card {
-    background-color: #1e293b;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #334155;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.card-title {
-    font-size: 1.3rem;
-    color: #22c55e;
-}
-
-.price-tag {
-    color: #cbd5e1;
-    font-weight: 700;
-}
-
-.neighborhood {
-    color: #38bdf8;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-}
-
-.cuisine {
-    color: #cbd5e1;
-    margin-bottom: 1rem;
-}
-
-.tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-}
-
-.tag-badge {
-    background-color: #0f172a;
-    color: #38bdf8;
-    padding: 0.25rem 0.75rem;
-    border-radius: 999px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border: 1px solid #334155;
-}
-
-.address {
-    color: #64748b;
-    font-size: 0.85rem;
-    border-top: 1px solid #334155;
-    padding-top: 0.75rem;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem 0 1rem 0;
-    color: #64748b;
-    font-size: 0.9rem;
-}
-/* AI Recommendation Bar */
+/* ==========================================================================
+   AI Recommendation Bar
+   ========================================================================== */
 .ai-box {
     display: flex;
     gap: 0.5rem;
@@ -172,14 +56,16 @@ footer {
     padding: 0.85rem 1.2rem;
     border-radius: 8px;
     border: 1px solid #22c55e;
-    background-color: #0f172a;
+    background-color: #1e293b;
     color: #fff;
     font-size: 0.95rem;
     outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 #aiInput:focus {
-    box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+    border-color: #4ade80;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
 }
 
 #aiBtn {
@@ -190,11 +76,15 @@ footer {
     border-radius: 8px;
     font-weight: 700;
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 #aiBtn:hover {
     background-color: #16a34a;
+}
+
+#aiBtn:active {
+    transform: scale(0.98);
 }
 
 .ai-response-card {
@@ -208,4 +98,207 @@ footer {
     text-align: left;
     font-size: 0.95rem;
     line-height: 1.5;
+}
+
+/* ==========================================================================
+   Standard Keyword Search & Filter Pills
+   ========================================================================== */
+.search-container {
+    max-width: 700px;
+    margin: 0 auto 1.25rem auto;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    color: #f8fafc;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #38bdf8;
+}
+
+.filter-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pill {
+    background-color: #1e293b;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pill:hover {
+    color: #f8fafc;
+    border-color: #64748b;
+}
+
+.pill.active {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border-color: #38bdf8;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Results Grid & Cards Layout
+   ========================================================================== */
+.grid-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.price-tag {
+    color: #22c55e;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.neighborhood {
+    color: #38bdf8;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+
+.cuisine {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+}
+
+.tag-badge {
+    background-color: #0f172a;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.address {
+    color: #64748b;
+    font-size: 0.8rem;
+    border-top: 1px solid #334155;
+    padding-top: 0.75rem;
+    margin-top: auto;
+}
+
+/* ==========================================================================
+   Footer Section
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #1e293b;
+    border-top: 1px solid #334155;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .ai-box {
+        flex-direction: column;
+    }
+    
+    #aiBtn {
+        width: 100%;
+    }
+}
+/* ==========================================================================
+   Leaflet Map Styling
+   ========================================================================== */
+#map {
+    height: 350px;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    z-index: 1; /* Prevents map controls from floating over dropdowns */
+}
+
+/* Optional: Make the map tiles slightly darker to fit your theme */
+/* Sleek Dark Map Tile Styling */
+.leaflet-layer {
+    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3);
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border-color: #334155 !important;
+}
+.leaflet-layer {
+    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3);
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border-color: #334155 !important;
 }
