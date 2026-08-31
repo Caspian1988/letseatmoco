@@ -1,6 +1,7 @@
 let restaurants = [];
+let map;
+let markersGroup;
 
-// Fallback dataset so local testing works without CORS blocks
 const fallbackData = [
     {
         id: "1",
@@ -9,7 +10,9 @@ const fallbackData = [
         cuisine: "Asian / Fusion",
         price: "$$",
         tags: ["Asian Cuisine", "Casual", "Local Favorite"],
-        address: "Olney, MD"
+        address: "Olney, MD",
+        lat: 39.1531, 
+        lng: -77.0669
     },
     {
         id: "2",
@@ -18,7 +21,9 @@ const fallbackData = [
         cuisine: "Asian / Fusion",
         price: "$$",
         tags: ["Asian Cuisine", "Casual", "Local Favorite"],
-        address: "Rockville, MD"
+        address: "Rockville, MD",
+        lat: 39.0840, 
+        lng: -77.1528
     },
     {
         id: "3",
@@ -27,11 +32,12 @@ const fallbackData = [
         cuisine: "Local Eats",
         price: "$$",
         tags: ["Halal Options", "Quick Bite", "Local Favorite"],
-        address: "Rockville, MD"
+        address: "Rockville, MD",
+        lat: 39.0855, 
+        lng: -77.1500
     }
 ];
 
-// Fetch restaurants.json, or load fallback if running off local file system
 fetch('restaurants.json')
     .then(res => res.json())
     .then(data => {
@@ -39,12 +45,10 @@ fetch('restaurants.json')
         displayRestaurants(restaurants);
     })
     .catch(err => {
-        console.warn("Local file system detected. Loading fallback dataset.");
         restaurants = fallbackData;
         displayRestaurants(restaurants);
     });
 
-// Render cards dynamically
 function displayRestaurants(items) {
     const grid = document.getElementById('restaurantGrid');
     if (!grid) return;
@@ -53,6 +57,7 @@ function displayRestaurants(items) {
 
     if (!items || items.length === 0) {
         grid.innerHTML = `<p style="text-align:center; grid-column: 1/-1; color: #94a3b8; padding: 2rem;">No spots found matching your filter.</p>`;
+        updateMap([]);
         return;
     }
 
@@ -75,9 +80,10 @@ function displayRestaurants(items) {
         `;
         grid.appendChild(card);
     });
+
+    updateMap(items);
 }
 
-// AI Matcher Logic
 function runAiMatcher() {
     const aiInput = document.getElementById('aiInput');
     const responseBox = document.getElementById('aiResponse');
@@ -118,7 +124,6 @@ function runAiMatcher() {
     }, 200);
 }
 
-// Standard Search Input
 function runStandardSearch(e) {
     const term = e.target.value.toLowerCase().trim();
     if (!term) {
@@ -134,7 +139,6 @@ function runStandardSearch(e) {
     displayRestaurants(filtered);
 }
 
-// Category Pills Filter
 function filterData(category) {
     document.querySelectorAll('.pill').forEach(btn => btn.classList.remove('active'));
     if (window.event && window.event.target) {
@@ -152,19 +156,55 @@ function filterData(category) {
     }
 }
 
-// Event Listeners
+function initMap() {
+    map = L.map('map').setView([39.15, -77.15], 11);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    markersGroup = L.layerGroup().addTo(map);
+}
+
+function updateMap(items) {
+    if (!map || !markersGroup) return;
+
+    markersGroup.clearLayers();
+
+    if (items.length === 0) {
+        map.setView([39.15, -77.15], 11);
+        return;
+    }
+
+    const bounds = [];
+
+    items.forEach(spot => {
+        if (spot.lat && spot.lng) {
+            const marker = L.marker([spot.lat, spot.lng]);
+            marker.bindPopup(`<b>${spot.name}</b><br>${spot.address}`);
+            markersGroup.addLayer(marker);
+            bounds.push([spot.lat, spot.lng]);
+        }
+    });
+
+    if (bounds.length > 0) {
+        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    initMap();
+
     const aiBtn = document.getElementById('aiBtn');
     const aiInput = document.getElementById('aiInput');
     const searchInput = document.getElementById('searchInput');
 
     if (aiBtn) aiBtn.addEventListener('click', runAiMatcher);
-
     if (aiInput) {
         aiInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') runAiMatcher();
         });
     }
-
     if (searchInput) searchInput.addEventListener('input', runStandardSearch);
 });
