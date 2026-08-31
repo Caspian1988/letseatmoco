@@ -3,32 +3,38 @@
     "id": "1",
     "name": "168 ASIAN BURRITO",
     "neighborhood": "OLNEY",
-    "cuisine": "American / Local",
+    "cuisine": "Asian / Fusion",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "Asian Cuisine",
+      "Casual"
     ],
-    "address": "18000 GEORGIA AVE., OLNEY, MD"
+    "address": "18000 GEORGIA AVE., OLNEY, MD",
+    "lat": 39.1531,
+    "lng": -77.0669
   },
   {
     "id": "2",
     "name": "168 SEASONS RESTAURANT HK",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Asian / Fusion",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "Asian Cuisine",
+      "Casual"
     ],
-    "address": "316 N WASHINGTON ST, ROCKVILLE, MD"
+    "address": "316 N WASHINGTON ST, ROCKVILLE, MD",
+    "lat": 39.0840,
+    "lng": -77.1528
   },
   {
     "id": "3",
     "name": "24/7 GROCERY & FOOD",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "202 PARK RD, ROCKVILLE, MD"
   },
@@ -36,10 +42,10 @@
     "id": "4",
     "name": "24/7 TOBACCO & GROCERY",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "11244 GEORGIA AVE, SILVER SPRING, MD"
   },
@@ -47,10 +53,10 @@
     "id": "5",
     "name": "29 CONVENIENCE MART",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "10755 COLESVILLE RD, SILVER SPRING, MD"
   },
@@ -58,10 +64,10 @@
     "id": "6",
     "name": "3 STAR BEER & WINE",
     "neighborhood": "GAITHERSBURG",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "18524 WOODFIELD RD, GAITHERSBURG, MD"
   },
@@ -69,10 +75,10 @@
     "id": "7",
     "name": "4 CORNERS PUB",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "10111 SUTHERLAND RD, SILVER SPRING, MD"
   },
@@ -80,10 +86,10 @@
     "id": "8",
     "name": "5-10 QUICK MART",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "817 HUNGERFORD DR., ROCKVILLE, MD"
   },
@@ -91,10 +97,10 @@
     "id": "9",
     "name": "5600 MARKET PLACE",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "5600 FISHERS LANE, ROCKVILLE, MD"
   },
@@ -102,10 +108,10 @@
     "id": "10",
     "name": "5 STAR FROM SCRATCH",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "11910 PARKLAWN DR STE O, ROCKVILLE, MD"
   },
@@ -113,10 +119,10 @@
     "id": "11",
     "name": "6-TWELVE CONVENIENT MART",
     "neighborhood": "GERMANTOWN",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "14100 C DARNESTOWN RD., GERMANTOWN, MD"
   },
@@ -124,12 +130,11 @@
     "id": "12",
     "name": "7501 CAFE C/O SODEXO",
     "neighborhood": "BETHESDA",
-    "cuisine": "American / Local",
+    "cuisine": "Bakery & Cafe",
     "price": "$",
     "tags": [
-      "Local Favorite",
-      "Coffee & Snacks",
-      "Quick Bite"
+      "Coffee",
+      "Pastries"
     ],
     "address": "7501 WISCONSIN AVE ,STE 100E, BETHESDA, MD"
   },
@@ -137,10 +142,10 @@
     "id": "13",
     "name": "7 BILLIARDS",
     "neighborhood": "GAITHERSBURG",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "15966 SHADY GROVE RD, GAITHERSBURG, MD"
   },
@@ -148,10 +153,10 @@
     "id": "14",
     "name": "7-ELEVEN",
     "neighborhood": "BETHESDA",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "7101 DEMOCRACY BLVD, BETHESDA, MD"
   },
@@ -159,10 +164,10 @@
     "id": "15",
     "name": "7-ELEVEN #1038936",
     "neighborhood": "GERMANTOWN",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "20510 FREDERICK RD, GERMANTOWN, MD"
   },
@@ -170,10 +175,10 @@
     "id": "16",
     "name": "7-ELEVEN #11567",
     "neighborhood": "DERWOOD",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "17701 MUNCASTER RD., DERWOOD, MD"
   },
@@ -181,10 +186,10 @@
     "id": "17",
     "name": "7-ELEVEN #11570",
     "neighborhood": "GAITHERSBURG",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "8946 N. WESTLAND DR., GAITHERSBURG, MD"
   },
@@ -192,10 +197,10 @@
     "id": "18",
     "name": "7-ELEVEN #11572",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "12405 GEORGIA AVE., SILVER SPRING, MD"
   },
@@ -203,10 +208,10 @@
     "id": "19",
     "name": "7-ELEVEN #11575",
     "neighborhood": "OLNEY",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "18120 GEORGIA AVE., OLNEY, MD"
   },
@@ -214,10 +219,10 @@
     "id": "20",
     "name": "7-ELEVEN #11577",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "15539 NEW HAMPSHIRE AVE., SILVER SPRING, MD"
   },
@@ -225,10 +230,10 @@
     "id": "21",
     "name": "7-ELEVEN #11577C",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "15539 NEW HAMPSHIRE AVE., SILVER SPRING, MD"
   },
@@ -236,10 +241,10 @@
     "id": "22",
     "name": "7-ELEVEN #11580B",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "160 ROLLINS AVE, ROCKVILLE, MD"
   },
@@ -247,10 +252,10 @@
     "id": "23",
     "name": "7-ELEVEN #11581",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "10203 NEW HAMPSHIRE AVE., SILVER SPRING, MD"
   },
@@ -258,10 +263,10 @@
     "id": "24",
     "name": "7-ELEVEN #11586",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "13251 ATLANTIC AVE., ROCKVILLE, MD"
   },
@@ -269,10 +274,10 @@
     "id": "25",
     "name": "7-ELEVEN #11590",
     "neighborhood": "KENSINGTON",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "10594 METROPOLITAN AVE., KENSINGTON, MD"
   },
@@ -280,10 +285,10 @@
     "id": "26",
     "name": "7-ELEVEN #11591",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "5402 RANDOLPH RD., ROCKVILLE, MD"
   },
@@ -291,10 +296,10 @@
     "id": "27",
     "name": "7-ELEVEN #11595",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "824 BALTIMORE RD, ROCKVILLE, MD"
   },
@@ -302,10 +307,10 @@
     "id": "28",
     "name": "7-ELEVEN #11666",
     "neighborhood": "TAKOMA PARK",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "900 MERRIMAC DR, TAKOMA PARK, MD"
   },
@@ -313,10 +318,10 @@
     "id": "29",
     "name": "7-ELEVEN #11713",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "14101 GEORGIA AVE., SILVER SPRING, MD"
   },
@@ -324,10 +329,10 @@
     "id": "30",
     "name": "7-ELEVEN #11727",
     "neighborhood": "BETHESDA",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "5114 RIVER RD, BETHESDA, MD"
   },
@@ -335,10 +340,10 @@
     "id": "31",
     "name": "7-ELEVEN #20096",
     "neighborhood": "SILVER SPRING",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "14430 LAYHILL RD., SILVER SPRING, MD"
   },
@@ -346,10 +351,10 @@
     "id": "32",
     "name": "7-ELEVEN #20294",
     "neighborhood": "ROCKVILLE",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "785 ROCKVILLE PK., ROCKVILLE, MD"
   },
@@ -357,11 +362,352 @@
     "id": "33",
     "name": "7-ELEVEN #22053",
     "neighborhood": "WHEATON",
-    "cuisine": "American / Local",
+    "cuisine": "Local Eats",
     "price": "$$",
     "tags": [
-      "Local Favorite"
+      "MoCo Spot"
     ],
     "address": "11445 AMHERST AVE., WHEATON, MD"
+  },
+  {
+    "id": "34",
+    "name": "7-ELEVEN #22921",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "8101 FENTON ST, SILVER SPRING, MD"
+  },
+  {
+    "id": "35",
+    "name": "7-ELEVEN #23666",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "9254 NEW HAMPSHIRE AVE, SILVER SPRING, MD"
+  },
+  {
+    "id": "36",
+    "name": "7-ELEVEN #23691",
+    "neighborhood": "BURTONSVILLE",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "15585 OLD COLUMBIA PK., BURTONSVILLE, MD"
+  },
+  {
+    "id": "37",
+    "name": "7-ELEVEN #23693",
+    "neighborhood": "DERWOOD",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "15821 FREDERICK RD, DERWOOD, MD"
+  },
+  {
+    "id": "38",
+    "name": "7-ELEVEN #23696",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "650 UNIVERSITY BLVD E, SILVER SPRING, MD"
+  },
+  {
+    "id": "39",
+    "name": "7-ELEVEN #23706",
+    "neighborhood": "KENSINGTON",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "3507 UNIVERSITY BLVD W, KENSINGTON, MD"
+  },
+  {
+    "id": "40",
+    "name": "7-ELEVEN #25403",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "13401 NEW HAMPSHIRE AVE, SILVER SPRING, MD"
+  },
+  {
+    "id": "41",
+    "name": "7-ELEVEN #25667",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "2 UNIVERSITY BLVD W, SILVER SPRING, MD"
+  },
+  {
+    "id": "42",
+    "name": "7-ELEVEN #25667C",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "2 UNIVERSITY BLVD W, SILVER SPRING, MD"
+  },
+  {
+    "id": "43",
+    "name": "7-ELEVEN #26360",
+    "neighborhood": "LAYTONSVILLE",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "6848 OLNEY LAYTONSVILLE RD, LAYTONSVILLE, MD"
+  },
+  {
+    "id": "44",
+    "name": "7-ELEVEN #26881",
+    "neighborhood": "GAITHERSBURG",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "8035 SNOUFFER SCHOOL RD, GAITHERSBURG, MD"
+  },
+  {
+    "id": "45",
+    "name": "7-ELEVEN #26997",
+    "neighborhood": "ASHTON",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "29 OLNEY-SANDY SPRING RD., ASHTON, MD"
+  },
+  {
+    "id": "46",
+    "name": "7-ELEVEN #27368B",
+    "neighborhood": "DAMASCUS",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "26344 RIDGE RD, DAMASCUS, MD"
+  },
+  {
+    "id": "47",
+    "name": "7-ELEVEN #27368C",
+    "neighborhood": "DAMASCUS",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "26344 RIDGE RD, DAMASCUS, MD"
+  },
+  {
+    "id": "48",
+    "name": "7-ELEVEN #27591D",
+    "neighborhood": "GERMANTOWN",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "19700 FREDERICK RD, GERMANTOWN, MD"
+  },
+  {
+    "id": "49",
+    "name": "7-ELEVEN #27669C",
+    "neighborhood": "GERMANTOWN",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "19786 CRYSTAL ROCK DR, GERMANTOWN, MD"
+  },
+  {
+    "id": "50",
+    "name": "7-ELEVEN #27669D",
+    "neighborhood": "GERMANTOWN",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "19786 CRYSTAL ROCK DR, GERMANTOWN, MD"
+  },
+  {
+    "id": "51",
+    "name": "7-ELEVEN #28808",
+    "neighborhood": "TAKOMA PARK",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "1301 UNIVERSITY BLVD., E., TAKOMA PARK, MD"
+  },
+  {
+    "id": "52",
+    "name": "7-ELEVEN #28813",
+    "neighborhood": "GAITHERSBURG",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "19235 WATKINS MILL RD., GAITHERSBURG, MD"
+  },
+  {
+    "id": "53",
+    "name": "7-ELEVEN #28823",
+    "neighborhood": "KENSINGTON",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "10524 CONNECTICUT AVE., KENSINGTON, MD"
+  },
+  {
+    "id": "54",
+    "name": "7-ELEVEN #28838",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "11303 LOCKWOOD DR., SILVER SPRING, MD"
+  },
+  {
+    "id": "55",
+    "name": "7-ELEVEN #28840C",
+    "neighborhood": "BETHESDA",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "7305 MAC ARTHUR BLVD, BETHESDA, MD"
+  },
+  {
+    "id": "56",
+    "name": "7-ELEVEN #28862",
+    "neighborhood": "ROCKVILLE",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "10020 DARNESTOWN RD., ROCKVILLE, MD"
+  },
+  {
+    "id": "57",
+    "name": "7-ELEVEN #28864C",
+    "neighborhood": "GERMANTOWN",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "13001 WISTERIA DR, GERMANTOWN, MD"
+  },
+  {
+    "id": "58",
+    "name": "7-ELEVEN #28903B",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "1319 FENWICK LANE, SILVER SPRING, MD"
+  },
+  {
+    "id": "59",
+    "name": "7-ELEVEN #29216B",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "13880 OLD COLUMBIA PIKE, SILVER SPRING, MD"
+  },
+  {
+    "id": "60",
+    "name": "7-ELEVEN #29763",
+    "neighborhood": "ROCKVILLE",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "11530-G ROCKVILLE PK., ROCKVILLE, MD"
+  },
+  {
+    "id": "61",
+    "name": "7-ELEVEN #29912",
+    "neighborhood": "GAITHERSBURG",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "15900 SHADY GROVE RD., GAITHERSBURG, MD"
+  },
+  {
+    "id": "62",
+    "name": "7-ELEVEN #32389",
+    "neighborhood": "SILVER SPRING",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "7980 GEORGIA AVE, SILVER SPRING, MD"
+  },
+  {
+    "id": "63",
+    "name": "7-ELEVEN #32879C",
+    "neighborhood": "GAITHERSBURG",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "3 PROFESSIONAL DRIVE, GAITHERSBURG, MD"
+  },
+  {
+    "id": "64",
+    "name": "7-ELEVEN #32882",
+    "neighborhood": "GERMANTOWN",
+    "cuisine": "Local Eats",
+    "price": "$$",
+    "tags": [
+      "MoCo Spot"
+    ],
+    "address": "12861 CLOPPER RD, GERMANTOWN, MD"
   }
 ]
